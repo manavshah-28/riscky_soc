@@ -32,17 +32,20 @@ instr_mem dut(
 
 // handle 
 instr_txn transaction;
-
+int index; 
 initial begin
 
 transaction = new();
+
+index = 0;
 
     // Fill instruction memory
     repeat (100) begin
         assert(transaction.randomize());
 
         // WRITE into DUT memory
-        dut.imem[transaction.addr] = transaction.instr;
+        dut.imem[index] = transaction.instr;
+        index = index + 1;
     end
 
     repeat (40) begin
