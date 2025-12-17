@@ -10,15 +10,12 @@ vlib work
 # Compile
 # ----------------------------------
 vlog -sv -work work ../common/riscky_pkg.sv
-vlog -sv -work work ../src/mux.sv
-vlog -sv -work work ../tests/mux_tb.sv
 vlog -sv -work work ../src/instr_mem.sv
 vlog -sv -work work ../tests/instr_mem_tb.sv
 
 # ----------------------------------
 # Simulate
 # ----------------------------------
-vsim work.mux_tb
 vsim work.instr_mem_tb
 
 run -all

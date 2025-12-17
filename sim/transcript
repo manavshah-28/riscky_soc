@@ -1,15 +1,15 @@
-# do run.do
+# do mux.do
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:11:02 on Dec 16,2025
+# Start time: 00:23:58 on Dec 17,2025
 # vlog -sv -work work ../common/riscky_pkg.sv 
 # -- Compiling package riscky_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# End time: 00:23:58 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:11:02 on Dec 16,2025
+# Start time: 00:23:58 on Dec 17,2025
 # vlog -sv -work work ../src/mux.sv 
 # -- Compiling package mux_sv_unit
 # -- Importing package riscky_pkg
@@ -17,10 +17,10 @@
 # 
 # Top level modules:
 # 	mux
-# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# End time: 00:23:58 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:11:02 on Dec 16,2025
+# Start time: 00:23:58 on Dec 17,2025
 # vlog -sv -work work ../tests/mux_tb.sv 
 # -- Compiling package mux_tb_sv_unit
 # -- Importing package riscky_pkg
@@ -28,10 +28,10 @@
 # 
 # Top level modules:
 # 	mux_tb
-# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# End time: 00:23:59 on Dec 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim work.mux_tb 
-# Start time: 21:11:02 on Dec 16,2025
+# Start time: 00:23:59 on Dec 17,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
@@ -76,5 +76,5 @@
 # DUT: A=10678572654850277235 B=14071720652848477707 sel=1 OUT=14071720652848477707
 # ** Note: $finish    : ../tests/mux_tb.sv(49)
 #    Time: 100 ns  Iteration: 0  Instance: /mux_tb
-# End time: 21:11:04 on Dec 16,2025, Elapsed time: 0:00:02
+# End time: 00:24:00 on Dec 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
