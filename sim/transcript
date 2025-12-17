@@ -1,0 +1,80 @@
+# do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:11:02 on Dec 16,2025
+# vlog -sv -work work ../common/riscky_pkg.sv 
+# -- Compiling package riscky_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:11:02 on Dec 16,2025
+# vlog -sv -work work ../src/mux.sv 
+# -- Compiling package mux_sv_unit
+# -- Importing package riscky_pkg
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 21:11:02 on Dec 16,2025
+# vlog -sv -work work ../tests/mux_tb.sv 
+# -- Compiling package mux_tb_sv_unit
+# -- Importing package riscky_pkg
+# -- Compiling module mux_tb
+# 
+# Top level modules:
+# 	mux_tb
+# End time: 21:11:02 on Dec 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.mux_tb 
+# Start time: 21:11:02 on Dec 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.riscky_pkg(fast)
+# Loading work.mux_sv_unit(fast)
+# Loading work.mux_tb_sv_unit(fast)
+# Loading work.mux_tb(fast)
+# TXN: A=17127439024423126898 B=11686515323336921685 sel=0
+# DUT: A=17127439024423126898 B=11686515323336921685 sel=0 OUT=17127439024423126898
+# TXN: A=3985032094415658331 B=16459544865369122986 sel=0
+# DUT: A=3985032094415658331 B=16459544865369122986 sel=0 OUT=3985032094415658331
+# TXN: A=547698046606002425 B=16994020531251825459 sel=1
+# DUT: A=547698046606002425 B=16994020531251825459 sel=1 OUT=16994020531251825459
+# TXN: A=561913334132904285 B=725554664395109290 sel=0
+# DUT: A=561913334132904285 B=725554664395109290 sel=0 OUT=561913334132904285
+# TXN: A=11609363828019105497 B=5815600471221976518 sel=0
+# DUT: A=11609363828019105497 B=5815600471221976518 sel=0 OUT=11609363828019105497
+# TXN: A=1014452321086210120 B=13196706435860552623 sel=0
+# DUT: A=1014452321086210120 B=13196706435860552623 sel=0 OUT=1014452321086210120
+# TXN: A=10683224643795682744 B=11252001699954972055 sel=1
+# DUT: A=10683224643795682744 B=11252001699954972055 sel=1 OUT=11252001699954972055
+# TXN: A=6598766030106128584 B=9206891303974076148 sel=0
+# DUT: A=6598766030106128584 B=9206891303974076148 sel=0 OUT=6598766030106128584
+# TXN: A=8660894876015331912 B=10655609001850022638 sel=1
+# DUT: A=8660894876015331912 B=10655609001850022638 sel=1 OUT=10655609001850022638
+# TXN: A=10678572654850277235 B=14071720652848477707 sel=1
+# DUT: A=10678572654850277235 B=14071720652848477707 sel=1 OUT=14071720652848477707
+# ** Note: $finish    : ../tests/mux_tb.sv(49)
+#    Time: 100 ns  Iteration: 0  Instance: /mux_tb
+# End time: 21:11:04 on Dec 16,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
