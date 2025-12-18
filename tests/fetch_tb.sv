@@ -50,7 +50,7 @@ pc_target_e = f1.pc_target_e;
 pc_src_e = f1.pc_src_e;
 
 @(posedge clk);   // allow PC to update
-$display("pc_target_e = %0d, pc_src_e = %0b, pc_d = %0d, pc_plus4_d = %0d, instr_d = %0h", f1.pc_target_e, f1.pc_src_e, pc_d, pc_plus4_d, instr_d);
+$display("pc_target_e = %0d, pc_src_e = %0b, pc_d = %0d, pc_plus4_d = %0d, instr_f = %0h, instr_d = %0h", f1.pc_target_e, f1.pc_src_e, pc_d, pc_plus4_d, dut.instr_f,instr_d);
 end
 $finish;
 end
