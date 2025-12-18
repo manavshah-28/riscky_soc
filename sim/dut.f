@@ -3,3 +3,4 @@
 ../src/adder.sv
 ../src/pc.sv
 ../src/fetch.sv
+../src/register_file.sv
