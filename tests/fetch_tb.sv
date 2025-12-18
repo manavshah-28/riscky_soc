@@ -6,7 +6,8 @@ rand bit [XLEN-1:0] pc_target_e;
 rand bit pc_src_e;
 
 constraint c_target {
-    pc_target_e inside {[0:1023]};
+    pc_target_e inside {[0:60]};
+    pc_target_e % 4 == 0;
 }
 
 constraint c_src{
@@ -49,7 +50,7 @@ pc_target_e = f1.pc_target_e;
 pc_src_e = f1.pc_src_e;
 
 @(posedge clk);   // allow PC to update
-$display("pc_target_e = %0d, pc_src_e = %0b, pc_d = %0d, pc_plus4_d = %0d", f1.pc_target_e, f1.pc_src_e, pc_d, pc_plus4_d);
+$display("pc_target_e = %0d, pc_src_e = %0b, pc_d = %0d, pc_plus4_d = %0d, instr_d = %0h", f1.pc_target_e, f1.pc_src_e, pc_d, pc_plus4_d, instr_d);
 end
 $finish;
 end

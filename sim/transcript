@@ -1,15 +1,15 @@
 # do {.\fetch.do}
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:26 on Dec 17,2025
 # vlog -sv -work work ../common/riscky_pkg.sv 
 # -- Compiling package riscky_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:26 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:26 on Dec 17,2025
 # vlog -sv -work work ../src/mux.sv 
 # -- Compiling package mux_sv_unit
 # -- Importing package riscky_pkg
@@ -17,10 +17,10 @@
 # 
 # Top level modules:
 # 	mux
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:26 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:26 on Dec 17,2025
 # vlog -sv -work work ../src/instr_mem.sv 
 # -- Compiling package instr_mem_sv_unit
 # -- Importing package riscky_pkg
@@ -28,10 +28,10 @@
 # 
 # Top level modules:
 # 	instr_mem
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:26 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:26 on Dec 17,2025
 # vlog -sv -work work ../src/pc.sv 
 # -- Compiling package pc_sv_unit
 # -- Importing package riscky_pkg
@@ -39,10 +39,10 @@
 # 
 # Top level modules:
 # 	pc
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:26 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:26 on Dec 17,2025
 # vlog -sv -work work ../src/adder.sv 
 # -- Compiling package adder_sv_unit
 # -- Importing package riscky_pkg
@@ -50,10 +50,10 @@
 # 
 # Top level modules:
 # 	adder
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:26 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:27 on Dec 17,2025
 # vlog -sv -work work ../src/fetch.sv 
 # -- Compiling package fetch_sv_unit
 # -- Importing package riscky_pkg
@@ -61,27 +61,27 @@
 # 
 # Top level modules:
 # 	fetch
-# End time: 21:24:21 on Dec 17,2025, Elapsed time: 0:00:00
+# End time: 21:37:27 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 21:24:21 on Dec 17,2025
+# Start time: 21:37:27 on Dec 17,2025
 # vlog -sv -work work ../tests/fetch_tb.sv 
 # -- Compiling package fetch_tb_sv_unit
 # -- Importing package riscky_pkg
 # -- Compiling module fetch_tb
-# ** Warning: ../tests/fetch_tb.sv(47): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: ../tests/fetch_tb.sv(48): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # 
 # Top level modules:
 # 	fetch_tb
-# End time: 21:24:22 on Dec 17,2025, Elapsed time: 0:00:01
+# End time: 21:37:27 on Dec 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vsim work.fetch_tb 
-# Start time: 21:24:22 on Dec 17,2025
+# Start time: 21:37:27 on Dec 17,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
 # Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
 # ** Warning: ../src/fetch.sv(40): (vopt-2241) Connection width does not match width of port 'addr'. The port definition is at: ../src/instr_mem.sv(5).
-# ** Warning: ../tests/fetch_tb.sv(47): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: ../tests/fetch_tb.sv(48): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # //  Questa Sim-64
 # //  Version 2024.1 win64 Feb  1 2024
@@ -106,17 +106,17 @@
 # Loading work.fetch_sv_unit(fast)
 # Loading work.fetch_tb_sv_unit(fast)
 # Loading work.fetch_tb(fast)
-# pc_target_e = 333, pc_src_e = 0, pc_d = 0, pc_plus4_d = 0
-# pc_target_e = 687, pc_src_e = 0, pc_d = 0, pc_plus4_d = 4
-# pc_target_e = 1014, pc_src_e = 1, pc_d = 4, pc_plus4_d = 8
-# pc_target_e = 447, pc_src_e = 0, pc_d = 8, pc_plus4_d = 12
-# pc_target_e = 598, pc_src_e = 0, pc_d = 1014, pc_plus4_d = 1018
-# pc_target_e = 704, pc_src_e = 0, pc_d = 1018, pc_plus4_d = 1022
-# pc_target_e = 675, pc_src_e = 1, pc_d = 1022, pc_plus4_d = 1026
-# pc_target_e = 644, pc_src_e = 0, pc_d = 1026, pc_plus4_d = 1030
-# pc_target_e = 693, pc_src_e = 0, pc_d = 675, pc_plus4_d = 679
-# pc_target_e = 840, pc_src_e = 0, pc_d = 679, pc_plus4_d = 683
-# ** Note: $finish    : ../tests/fetch_tb.sv(54)
+# pc_target_e = 44, pc_src_e = 0, pc_d = 0, pc_plus4_d = 0, instr_d = 0
+# pc_target_e = 60, pc_src_e = 0, pc_d = 0, pc_plus4_d = 4, instr_d = 0
+# pc_target_e = 24, pc_src_e = 1, pc_d = 4, pc_plus4_d = 8, instr_d = 4
+# pc_target_e = 60, pc_src_e = 0, pc_d = 8, pc_plus4_d = 12, instr_d = 8
+# pc_target_e = 24, pc_src_e = 0, pc_d = 24, pc_plus4_d = 28, instr_d = 18
+# pc_target_e = 0, pc_src_e = 0, pc_d = 28, pc_plus4_d = 32, instr_d = 1c
+# pc_target_e = 48, pc_src_e = 1, pc_d = 32, pc_plus4_d = 36, instr_d = 20
+# pc_target_e = 8, pc_src_e = 0, pc_d = 36, pc_plus4_d = 40, instr_d = 24
+# pc_target_e = 40, pc_src_e = 0, pc_d = 48, pc_plus4_d = 52, instr_d = 30
+# pc_target_e = 4, pc_src_e = 0, pc_d = 52, pc_plus4_d = 56, instr_d = 34
+# ** Note: $finish    : ../tests/fetch_tb.sv(55)
 #    Time: 105 ns  Iteration: 1  Instance: /fetch_tb
-# End time: 21:24:23 on Dec 17,2025, Elapsed time: 0:00:01
+# End time: 21:37:28 on Dec 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 2
