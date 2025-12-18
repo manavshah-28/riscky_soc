@@ -3,51 +3,62 @@ import riscky_pkg::*;
 module fetch(
     input clk, rst_n, pc_src_e,
     input [XLEN-1:0] pc_target_e,
-    output [ILEN-1:0] instr_d,
-    output [XLEN-1:0] pc_d, pc_plus4_d
+    output logic [ILEN-1:0] instr_d,
+    output logic [XLEN-1:0] pc_d, pc_plus4_d
 );
 
 //wires 
-logic [XLEN-1:0] pc_;
-logic [XLEN-1:0] pcf
+logic [ILEN-1:0] instr_f;
+logic [XLEN-1:0] pcf_, pcf;
+logic [XLEN-1:0] pc_plus4_f;
 
 // regs
-logic [XLEN-1:0] instr_reg_f;       // fetch stage instruction reg
-logic [XLEN-1:0] pc_reg_f;          // fetch stage pc reg
-logic [XLEN-1:0] pc_plus4_reg_f;    // fetch stage pc4 reg
+logic [XLEN-1:0] pcf_reg;      
+logic [ILEN-1:0] pc_plus4_f_reg;          
+logic [XLEN-1:0] instr_f_reg;    // fetch stage pc4 reg
 
 mux pc_mux(
     .A(pc_plus4_f),
     .B(pc_target_e),
     .sel(pc_src_e),
-    .mux_out(pc_)
+    .mux_out(pcf_)
 );
 
 pc program_counter(
-    .clk(),
-    .rst_n(),
-    .pc_next(),
-    .pc()
+    .clk(clk),
+    .rst_n(rst_n),
+    .pc_next(pcf_),
+    .pc(pcf)
 );
 
 adder pc_adder(
-    .a(),
-    .b(),
-    .c()
+    .a(pcf),
+    .b(64'h00000004),
+    .c(pc_plus4_f)
 );
 
 instr_mem instruction_memory(
-    .rst_n(),
-    .addr(),
-    .rd_instr()
+    .rst_n(rst_n),
+    .addr(pcf),
+    .rd_instr(instr_f)
 );
 
 always @(posedge clk) begin
 if(!rst_n) begin
-pc_reg_f <= 'b0;
+    pcf_reg <= 'b0;
+    pc_plus4_f_reg <= 'b0;
+    instr_f_reg <= 'b0;
 end
 else begin
-pc_reg_f <= pc_;
+    pcf_reg <= pcf;
+    pc_plus4_f_reg <= pc_plus4_f;
+    instr_f_reg <= instr_f;
 end
 end
+
+// output ports
+assign instr_d = (!rst_n) ? 64'b0 : instr_f_reg; 
+assign pc_d =  (!rst_n) ? 64'b0 : pcf_reg;
+assign pc_plus4_d = (!rst_n) ? 64'b0 : pc_plus4_f_reg;
+
 endmodule

@@ -10,4 +10,15 @@ logic [ILEN-1:0] imem [0:IMEM_WORDS-1];
 
 assign rd_instr = (!rst_n) ? {ILEN{1'b0}} : imem[addr];
 
+// initial begin
+//     $readmemh("memfile.hex",imem);
+// end
+
+//test purposes
+initial begin
+imem[0]=32'h002082B3;
+imem[4]=32'h005182B3;
+imem[8]=32'h005202B3;
+end
+
 endmodule
