@@ -60,7 +60,7 @@ register_file RF(
 
 // sign extender
 extender extend(
-    .instr(instr_d[XLEN-1:0]),
+    .instr(instr_d),
     .imm_sel(imm_src_d),
     .imm_ext(imm_ext_d)
 );
