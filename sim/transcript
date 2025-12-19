@@ -1,43 +1,3 @@
-# do {.\reg_file.do}
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 07:37:24 on Dec 18,2025
-# vlog -sv -work work ../common/riscky_pkg.sv 
-# -- Compiling package riscky_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 07:37:25 on Dec 18,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 07:37:25 on Dec 18,2025
-# vlog -sv -work work ../src/register_file.sv 
-# -- Compiling package register_file_sv_unit
-# -- Importing package riscky_pkg
-# -- Compiling module register_file
-# 
-# Top level modules:
-# 	register_file
-# End time: 07:37:25 on Dec 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 07:37:25 on Dec 18,2025
-# vlog -sv -work work ../tests/reg_file_tb.sv 
-# -- Compiling package reg_file_tb_sv_unit
-# -- Importing package riscky_pkg
-# -- Compiling module reg_file_tb
-# ** Warning: ../tests/reg_file_tb.sv(49): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# 
-# Top level modules:
-# 	reg_file_tb
-# End time: 07:37:25 on Dec 18,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vsim work.reg_file_tb 
-# Start time: 07:37:25 on Dec 18,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: ../tests/reg_file_tb.sv(49): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # //  Questa Sim-64
 # //  Version 2024.1 win64 Feb  1 2024
 # //
@@ -52,42 +12,32 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+# vsim -voptargs="+acc" work.decode_tb 
+# Start time: 00:58:17 on Dec 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: ../tests/decode_tb.sv(195): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading sv_std.std
 # Loading work.riscky_pkg(fast)
+# Loading work.decode_tb_sv_unit(fast)
+# Loading work.decode_tb(fast)
+# Loading work.decode_sv_unit(fast)
+# Loading work.decode(fast)
 # Loading work.register_file_sv_unit(fast)
-# Loading work.reg_file_tb_sv_unit(fast)
-# Loading work.reg_file_tb(fast)
-# we = 0, A1 = 28, A2 = 6, A3 = 15, D3 = 8, RD1 = 0, RD2 = 0
-# we = 0, A1 = 11, A2 = 26, A3 = 18, D3 = 33, RD1 = 0, RD2 = 0
-# we = 0, A1 = 31, A2 = 10, A3 = 7, D3 = 54, RD1 = 0, RD2 = 0
-# we = 0, A1 = 15, A2 = 12, A3 = 2, D3 = 43, RD1 = 0, RD2 = 0
-# we = 0, A1 = 5, A2 = 27, A3 = 29, D3 = 66, RD1 = 0, RD2 = 0
-# we = 1, A1 = 23, A2 = 20, A3 = 13, D3 = 8, RD1 = 0, RD2 = 0
-# we = 1, A1 = 13, A2 = 30, A3 = 2, D3 = 17, RD1 = 8, RD2 = 0
-# we = 1, A1 = 24, A2 = 3, A3 = 23, D3 = 6, RD1 = 0, RD2 = 0
-# we = 0, A1 = 20, A2 = 1, A3 = 30, D3 = 54, RD1 = 0, RD2 = 0
-# we = 0, A1 = 23, A2 = 29, A3 = 28, D3 = 25, RD1 = 6, RD2 = 0
-# we = 1, A1 = 18, A2 = 24, A3 = 22, D3 = 0, RD1 = 0, RD2 = 0
-# we = 1, A1 = 19, A2 = 21, A3 = 20, D3 = 29, RD1 = 0, RD2 = 0
-# we = 0, A1 = 25, A2 = 27, A3 = 23, D3 = 3, RD1 = 0, RD2 = 0
-# we = 1, A1 = 27, A2 = 14, A3 = 1, D3 = 81, RD1 = 0, RD2 = 0
-# we = 0, A1 = 8, A2 = 4, A3 = 13, D3 = 27, RD1 = 0, RD2 = 0
-# we = 0, A1 = 9, A2 = 24, A3 = 21, D3 = 34, RD1 = 0, RD2 = 0
-# we = 0, A1 = 1, A2 = 14, A3 = 26, D3 = 28, RD1 = 81, RD2 = 0
-# we = 1, A1 = 29, A2 = 2, A3 = 22, D3 = 58, RD1 = 0, RD2 = 17
-# we = 0, A1 = 7, A2 = 0, A3 = 10, D3 = 0, RD1 = 0, RD2 = 0
-# we = 1, A1 = 13, A2 = 4, A3 = 3, D3 = 73, RD1 = 8, RD2 = 0
-# we = 0, A1 = 20, A2 = 7, A3 = 9, D3 = 58, RD1 = 29, RD2 = 0
-# we = 1, A1 = 30, A2 = 25, A3 = 23, D3 = 20, RD1 = 0, RD2 = 0
-# we = 0, A1 = 23, A2 = 26, A3 = 3, D3 = 36, RD1 = 20, RD2 = 0
-# we = 1, A1 = 5, A2 = 16, A3 = 18, D3 = 68, RD1 = 0, RD2 = 0
-# we = 0, A1 = 30, A2 = 22, A3 = 9, D3 = 61, RD1 = 0, RD2 = 58
-# we = 0, A1 = 28, A2 = 19, A3 = 24, D3 = 60, RD1 = 0, RD2 = 0
-# we = 0, A1 = 28, A2 = 14, A3 = 8, D3 = 62, RD1 = 0, RD2 = 0
-# we = 0, A1 = 5, A2 = 8, A3 = 20, D3 = 77, RD1 = 0, RD2 = 0
-# we = 0, A1 = 25, A2 = 21, A3 = 1, D3 = 21, RD1 = 0, RD2 = 0
-# we = 0, A1 = 19, A2 = 20, A3 = 25, D3 = 97, RD1 = 0, RD2 = 29
-# ** Note: $finish    : ../tests/reg_file_tb.sv(62)
-#    Time: 315 ns  Iteration: 1  Instance: /reg_file_tb
-# End time: 07:37:26 on Dec 18,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# Loading work.register_file(fast)
+# Loading work.extender_sv_unit(fast)
+# Loading work.extender(fast)
+# Loading work.control_sv_unit(fast)
+# Loading work.control(fast)
+add wave -position insertpoint sim:/decode_tb/dut/*
+run -all
+# ** Note: $finish    : ../tests/decode_tb.sv(200)
+#    Time: 245 ns  Iteration: 1  Instance: /decode_tb
+# 1
+# Break in Module decode_tb at ../tests/decode_tb.sv line 200
+add wave -position insertpoint sim:/decode_tb/dut/*
+# End time: 00:59:57 on Dec 19,2025, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 2

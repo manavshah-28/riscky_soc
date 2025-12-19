@@ -72,7 +72,7 @@ control con(
     .funct3(instr_d[14:12]),
 
     .reg_write(reg_write_d),
-    .alu_src(imm_src_d),
+    .alu_src(alu_src_d),
     .mem_write(mem_write_d),
     .result_src(result_src_d),
     .branch(branch_d),

@@ -4,3 +4,6 @@
 ../src/pc.sv
 ../src/fetch.sv
 ../src/register_file.sv
+../src/extender.sv
+../src/control.sv
+../src/decode.sv
